@@ -205,27 +205,63 @@ public final class AppiumServiceBuilder
      */
     public AppiumServiceBuilder withArgument(ServerArgument argument, String value) {
         String argName = argument.getArgument();
-        switch (argName) {
-            case "--port":
-            case "-p":
-                usingPort(Integer.parseInt(value));
-                break;
-            case "--address":
-            case "-a":
-                withIPAddress(value);
-                break;
-            case "--log":
-            case "-g":
-                withLogFile(new File(value));
-                break;
-            case "--base-path":
-                serverArguments.put(argName, sanitizeBasePath(value));
-                break;
-            default:
-                serverArguments.put(argName, value);
-                break;
+        if(isPortArgument(argName)){
+            setPort(value);
+        } else if(isAddressArgument(argName)){
+            setAddress(value);
+        } else if(isLogArgument(argName)){
+            setLogFile(value);
+        } else if(isBasePathArgument(argName)){
+            setBasePath(argName, value);
+        } else{
+            setServerArgument(argName, value);
         }
         return this;
+    }
+
+    // New method, Checks if the argument is related to port
+    private boolean isPortArgument(String argName) {
+        return "--port".equals(argName) || "-p".equals(argName);
+    }
+
+    // New method, Sets the port value
+    private void setPort(String value) {
+        usingPort(Integer.parseInt(value));
+    }
+
+    // New method, Checks if the argument is related to address
+    private boolean isAddressArgument(String argName) {
+        return "--address".equals(argName) || "-a".equals(argName);
+    }
+
+    // New method, Sets the IP address
+    private void setAddress(String value) {
+        withIPAddress(value);
+    }
+
+    // New method, Checks if the argument is related to log file
+    private boolean isLogArgument(String argName) {
+        return "--log".equals(argName) || "-g".equals(argName);
+    }
+
+    // New method, Sets the log file
+    private void setLogFile(String value) {
+        withLogFile(new File(value));
+    }
+
+    // New method, Checks if the argument is related to base path
+    private boolean isBasePathArgument(String argName) {
+        return "--base-path".equals(argName);
+    }
+
+    // New method, Sets the base path value
+    private void setBasePath(String argName, String value) {
+        serverArguments.put(argName, sanitizeBasePath(value));
+    }
+
+    // New method, Sets other server arguments
+    private void setServerArgument(String argName, String value) {
+        serverArguments.put(argName, value);
     }
 
     private static String sanitizeBasePath(String basePath) {
