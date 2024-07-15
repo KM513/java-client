@@ -53,74 +53,74 @@ public class AndroidPageObjectTest extends BaseAndroidTest {
     private boolean populated = false;
 
     @FindBy(className = "android.widget.TextView")
-    private List<WebElement> textVieWs;
+    protected List<WebElement> textVieWs;
 
     @AndroidFindBy(className = "android.widget.TextView")
-    private List<WebElement> androidTextViews;
+    protected List<WebElement> androidTextViews;
 
     @AndroidFindBy(className = "android.widget.TextView")
-    private List<WebElement> androidOriOsTextViews;
+    protected List<WebElement> androidOriOsTextViews;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/text1\")")
-    private List<WebElement> androidUIAutomatorViews;
+    protected List<WebElement> androidUIAutomatorViews;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/text1\")")
-    private List<WebElement> mobileElementViews;
+    protected List<WebElement> mobileElementViews;
 
     @FindBy(className = "android.widget.TextView")
-    private List<WebElement> mobiletextVieWs;
+    protected List<WebElement> mobiletextVieWs;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/text1\")")
-    private List<RemoteWebElement> remoteElementViews;
+    protected List<RemoteWebElement> remoteElementViews;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/list\")")
     @AndroidFindBy(className = "android.widget.TextView")
-    private List<WebElement> chainElementViews;
+    protected List<WebElement> chainElementViews;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/content\")")
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/list\")")
     @AndroidFindBy(id = "android:id/text1")
-    private List<WebElement> chainAndroidOrIOSUIAutomatorViews;
+    protected List<WebElement> chainAndroidOrIOSUIAutomatorViews;
 
     @FindBy(id = "android:id/text1")
-    private WebElement textView;
+    protected WebElement textView;
 
     @AndroidFindBy(className = "android.widget.TextView")
-    private WebElement androidTextView;
+    protected WebElement androidTextView;
 
     @AndroidFindBy(className = "android.widget.TextView")
-    private WebElement androidOriOsTextView;
+    protected WebElement androidOriOsTextView;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/text1\")")
-    private WebElement androidUIAutomatorView;
+    protected WebElement androidUIAutomatorView;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/text1\")")
-    private WebElement mobileElementView;
+    protected WebElement mobileElementView;
 
     @FindBy(className = "android.widget.TextView")
-    private WebElement mobiletextVieW;
+    protected WebElement mobiletextVieW;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/text1\")")
-    private RemoteWebElement remotetextVieW;
+    protected RemoteWebElement remotetextVieW;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/list\")")
     @AndroidFindBy(className = "android.widget.TextView")
-    private WebElement chainElementView;
+    protected WebElement chainElementView;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/content\")")
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/list\")")
     @AndroidFindBy(id = "android:id/text1")
-    private WebElement chainAndroidOrIOSUIAutomatorView;
+    protected WebElement chainAndroidOrIOSUIAutomatorView;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/content\")")
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/list\")")
     @AndroidFindBy(id = "android:id/text1")
-    private WebElement androidElementView;
+    protected WebElement androidElementView;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/content\")")
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/list\")")
     @AndroidFindBy(id = "android:id/text1")
-    private List<WebElement> androidElementViews;
+    protected List<WebElement> androidElementViews;
 
     @HowToUseLocators(androidAutomation = ALL_POSSIBLE)
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/Fakecontent\")")
@@ -128,7 +128,7 @@ public class AndroidPageObjectTest extends BaseAndroidTest {
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/list\")")
     //by this locator element is found
     @AndroidFindBy(id = "android:id/FakeId")
-    private List<WebElement> findAllElementViews;
+    protected List<WebElement> findAllElementViews;
 
     @HowToUseLocators(androidAutomation = ALL_POSSIBLE)
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/Fakecontent\")")
@@ -136,63 +136,63 @@ public class AndroidPageObjectTest extends BaseAndroidTest {
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/list\")")
     //by this locator element is found
     @AndroidFindBy(id = "android:id/FakeId")
-    private WebElement findAllElementView;
+    protected WebElement findAllElementView;
 
     @AndroidFindBy(id = "android:id/text1")
-    private WebElement textAndroidId;
+    protected WebElement textAndroidId;
 
     @FindBy(css = "e.e1.e2")
-    private List<WebElement> elementsWhenAndroidLocatorIsNotDefinedAndThereIsInvalidFindBy;
+    protected List<WebElement> elementsWhenAndroidLocatorIsNotDefinedAndThereIsInvalidFindBy;
 
     @FindBy(css = "e.e1.e2")
-    private WebElement elementWhenAndroidLocatorIsNotDefinedAndThereIsInvalidFindBy;
+    protected WebElement elementWhenAndroidLocatorIsNotDefinedAndThereIsInvalidFindBy;
 
     @FindBy(id = "fakeId")
-    private WebElement fakeElement;
+    protected WebElement fakeElement;
 
     @FindBy(id = "fakeId")
-    private List<WebElement> fakeElements;
+    protected List<WebElement> fakeElements;
 
     @FindBy(className = "android.widget.TextView")
     @CacheLookup
-    private List<WebElement> cachedViews;
+    protected List<WebElement> cachedViews;
 
     @CacheLookup
     @FindBy(className = "android.widget.TextView")
-    private WebElement cached;
+    protected WebElement cached;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/content\")")
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/list\")")
     @AndroidFindBy(id = "android:id/Faketext1")
     @AndroidFindBy(id = "android:id/text1")
-    private WebElement elementFoundByInvalidChainedSelector;
+    protected WebElement elementFoundByInvalidChainedSelector;
 
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/content\")")
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/list\")")
     @AndroidFindBy(id = "android:id/Faketext1")
     @AndroidFindBy(id = "android:id/text1")
-    private List<WebElement> elementsFoundByInvalidChainedSelector;
+    protected List<WebElement> elementsFoundByInvalidChainedSelector;
 
     @AndroidFindBy(id = "android:id/text1", priority = 2)
     @AndroidFindAll(value = {
         @AndroidBy(uiAutomator = "new UiSelector().resourceId(\"android:id/list\")"),
         @AndroidBy(id = "android:id/fakeId")}, priority = 1)
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/content\")")
-    private WebElement androidElementViewFoundByMixedSearching;
+    protected WebElement androidElementViewFoundByMixedSearching;
 
     @AndroidFindBy(id = "android:id/text1", priority = 2)
     @AndroidFindAll(value = {
         @AndroidBy(uiAutomator = "new UiSelector().resourceId(\"android:id/list\")"),
         @AndroidBy(id = "android:id/fakeId")}, priority = 1)
     @AndroidFindBy(uiAutomator = "new UiSelector().resourceId(\"android:id/content\")")
-    private List<WebElement> androidElementsViewFoundByMixedSearching;
+    protected List<WebElement> androidElementsViewFoundByMixedSearching;
 
     @AndroidFindBys({
         @AndroidBy(uiAutomator = "new UiSelector().resourceId(\"android:id/content\")", priority = 1),
         @AndroidBy(className = "android.widget.FrameLayout")})
     @AndroidFindBys({@AndroidBy(id = "android:id/text1", priority = 1),
         @AndroidBy(uiAutomator = "new UiSelector().resourceId(\"android:id/list\")")})
-    private WebElement androidElementViewFoundByMixedSearching2;
+    protected WebElement androidElementViewFoundByMixedSearching2;
 
     @AndroidFindBys({
         @AndroidBy(uiAutomator = "new UiSelector().resourceId(\"android:id/content\")", priority = 1),
@@ -200,7 +200,7 @@ public class AndroidPageObjectTest extends BaseAndroidTest {
     @AndroidFindBys({
         @AndroidBy(id = "android:id/text1", priority = 1),
         @AndroidBy(uiAutomator = "new UiSelector().resourceId(\"android:id/list\")")})
-    private List<WebElement> androidElementsViewFoundByMixedSearching2;
+    protected List<WebElement> androidElementsViewFoundByMixedSearching2;
 
     @HowToUseLocators(androidAutomation = ALL_POSSIBLE)
     @AndroidFindBy(id = "android:id/fakeId1")
@@ -212,7 +212,7 @@ public class AndroidPageObjectTest extends BaseAndroidTest {
         @AndroidBy(className = "android.widget.FrameLayout")}, priority = 2)
     @AndroidFindBy(id = "android:id/fakeId3", priority = 3)
     @AndroidFindBy(id = "android:id/fakeId4", priority = 4)
-    private WebElement androidElementViewFoundByMixedSearching3;
+    protected WebElement androidElementViewFoundByMixedSearching3;
 
     @HowToUseLocators(androidAutomation = ALL_POSSIBLE)
     @AndroidFindBy(id = "android:id/fakeId1")
@@ -224,7 +224,7 @@ public class AndroidPageObjectTest extends BaseAndroidTest {
         @AndroidBy(className = "android.widget.FrameLayout")}, priority = 2)
     @AndroidFindBy(id = "android:id/fakeId3", priority = 3)
     @AndroidFindBy(id = "android:id/fakeId4", priority = 4)
-    private List<WebElement> androidElementsViewFoundByMixedSearching3;
+    protected List<WebElement> androidElementsViewFoundByMixedSearching3;
 
     /**
      * The setting up.
@@ -236,170 +236,5 @@ public class AndroidPageObjectTest extends BaseAndroidTest {
         }
 
         populated = true;
-    }
-
-    @Test public void findByElementsTest() {
-        assertNotEquals(0, textVieWs.size());
-    }
-
-    @Test public void findByElementTest() {
-        assertNotEquals(null, textView.getAttribute("text"));
-    }
-
-
-    @Test public void androidFindByElementsTest() {
-        assertNotEquals(0, androidTextViews.size());
-    }
-
-    @Test public void androidFindByElementTest() {
-        assertNotEquals(null, androidTextView.getAttribute("text"));
-    }
-
-    @Test public void androidOrIOSFindByElementsTest() {
-        assertNotEquals(0, androidOriOsTextViews.size());
-    }
-
-    @Test public void androidOrIOSFindByElementTest() {
-        assertNotEquals(null, androidOriOsTextView.getAttribute("text"));
-    }
-
-    @Test public void androidFindByUIAutomatorElementsTest() {
-        assertNotEquals(0, androidUIAutomatorViews.size());
-    }
-
-    @Test public void androidFindByUIAutomatorElementTest() {
-        assertNotEquals(null, androidUIAutomatorView.getAttribute("text"));
-    }
-
-    @Test public void areMobileElementsTest() {
-        assertNotEquals(0, mobileElementViews.size());
-    }
-
-    @Test public void isMobileElementTest() {
-        assertNotEquals(null, mobileElementView.getAttribute("text"));
-    }
-
-    @Test public void areMobileElementsFindByTest() {
-        assertNotEquals(0, mobiletextVieWs.size());
-    }
-
-    @Test public void isMobileElementFindByTest() {
-        assertNotEquals(null, mobiletextVieW.getAttribute("text"));
-    }
-
-    @Test public void areRemoteElementsTest() {
-        assertNotEquals(0, remoteElementViews.size());
-    }
-
-    @Test public void isRemoteElementTest() {
-        assertNotEquals(null, remotetextVieW.getAttribute("text"));
-    }
-
-    @Test public void androidChainSearchElementsTest() {
-        assertNotEquals(0, chainElementViews.size());
-    }
-
-    @Test public void androidChainSearchElementTest() {
-        assertNotEquals(null, chainElementView.getAttribute("text"));
-    }
-    // Changed name from androidOrIOSFindByElementsTestChainSearches to testFindByElements
-    @Test public void testFindByElements() {
-        assertNotEquals(0, chainAndroidOrIOSUIAutomatorViews.size());
-    }
-
-    @Test public void androidOrIOSFindByElementTestChainSearches() {
-        assertNotEquals(null, chainAndroidOrIOSUIAutomatorView.getAttribute("text"));
-    }
-
-    @Test public void isAndroidElementTest() {
-        assertNotEquals(null, androidElementView.getAttribute("text"));
-    }
-
-    @Test public void areAndroidElementsTest() {
-        assertNotEquals(0, androidElementViews.size());
-    }
-
-    @Test public void findAllElementTest() {
-        assertNotEquals(null, findAllElementView.getAttribute("text"));
-    }
-
-    @Test public void findAllElementsTest() {
-        assertNotEquals(0, findAllElementViews.size());
-    }
-
-    @Test public void findByAndroidAnnotationOnlyTest() {
-        assertNotEquals(null, textAndroidId.getAttribute("text"));
-    }
-
-    @Test public void checkThatTestWillNotBeFailedBecauseOfInvalidFindBy() {
-        assertThrows(NoSuchElementException.class,
-            () -> elementWhenAndroidLocatorIsNotDefinedAndThereIsInvalidFindBy.getAttribute("text"));
-    }
-
-    @Test public void checkThatTestWillNotBeFailedBecauseOfInvalidFindByList() {
-        assertEquals(0, elementsWhenAndroidLocatorIsNotDefinedAndThereIsInvalidFindBy.size());
-    }
-
-    @Test public void checkThatClassObjectMethodsDoNotInvokeTheSearching() {
-        assertTrue(WebElement.class.isAssignableFrom(fakeElement.getClass()));
-        assertNotEquals(WebElement.class, fakeElement.getClass());
-        assertEquals(driver, ((WrapsDriver) fakeElement).getWrappedDriver());
-    }
-
-    @Test public void checkThatClassObjectMethodsDoNotInvokeTheSearchingOfElementLest() {
-        assertTrue(List.class.isAssignableFrom(fakeElements.getClass()));
-        assertNotEquals(ArrayList.class, fakeElements.getClass());
-    }
-
-    @Test public void checkCachedElements() {
-        assertEquals(((RemoteWebElement) cached).getId(), ((RemoteWebElement) cached).getId());
-        assertEquals(cached.hashCode(), cached.hashCode());
-        //noinspection SimplifiableAssertion,EqualsWithItself
-        assertTrue(cached.equals(cached));
-    }
-
-    @Test public void checkCachedLists() {
-        assertEquals(cachedViews.hashCode(), cachedViews.hashCode());
-        //noinspection SimplifiableAssertion,EqualsWithItself
-        assertTrue(cachedViews.equals(cachedViews));
-    }
-
-    @Test public void checkListHashing() {
-        assertFalse(cachedViews.isEmpty());
-        assertEquals(cachedViews.size(), new HashSet<>(cachedViews).size());
-    }
-
-    @Test
-    public void checkThatElementSearchingThrowsExpectedExceptionIfChainedLocatorIsInvalid() {
-        assertThrows(NoSuchElementException.class, () -> elementFoundByInvalidChainedSelector.getAttribute("text"));
-    }
-
-    @Test public void checkThatListSearchingWorksIfChainedLocatorIsInvalid() {
-        assertEquals(0, elementsFoundByInvalidChainedSelector.size());
-    }
-
-    @Test public void checkMixedElementSearching1() {
-        assertNotNull(androidElementViewFoundByMixedSearching.getAttribute("text"));
-    }
-
-    @Test public void checkMixedElementsSearching1() {
-        assertNotEquals(0, androidElementsViewFoundByMixedSearching.size());
-    }
-
-    @Disabled("FIXME")
-    @Test public void checkMixedElementSearching2() {
-        assertNotNull(androidElementViewFoundByMixedSearching2.getAttribute("text"));
-    }
-
-    @Test public void checkMixedElementsSearching2() {
-        assertNotEquals(0, androidElementsViewFoundByMixedSearching2.size());
-    }
-
-    @Test public void checkMixedElementSearching3() {
-        assertNotNull(androidElementViewFoundByMixedSearching3.getAttribute("text"));
-    }
-
-    @Test public void checkMixedElementsSearching3() {
-        assertNotEquals(0, androidElementsViewFoundByMixedSearching3.size());
     }
 }
