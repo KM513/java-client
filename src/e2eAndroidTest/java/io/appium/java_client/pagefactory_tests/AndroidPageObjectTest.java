@@ -302,8 +302,8 @@ public class AndroidPageObjectTest extends BaseAndroidTest {
     @Test public void androidChainSearchElementTest() {
         assertNotEquals(null, chainElementView.getAttribute("text"));
     }
-
-    @Test public void androidOrIOSFindByElementsTestChainSearches() {
+    // Changed name from androidOrIOSFindByElementsTestChainSearches to testFindByElements
+    @Test public void testFindByElements() {
         assertNotEquals(0, chainAndroidOrIOSUIAutomatorViews.size());
     }
 
